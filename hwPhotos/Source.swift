@@ -35,7 +35,7 @@ struct Source {
             .init(id: 17, imageName: "grayscale17"),
             .init(id: 18, imageName: "grayscale18"),
             .init(id: 19, imageName: "grayscale19"),
-            .init(id: 20, imageName: "grayscale20"),
+            .init(id: 20, imageName: "grayscale20")
         ]
     }
     
