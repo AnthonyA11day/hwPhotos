@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         
         view.addSubview(collectionView)
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.register(PhotoCell.self, forCellWithReuseIdentifier: "\(PhotoCell.self)")
 
         NSLayoutConstraint.activate([
@@ -77,3 +78,10 @@ extension ViewController: UICollectionViewDataSource {
     
 }
 
+extension ViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Select image - \(sourse[indexPath.item])")
+    }
+    
+}
