@@ -15,6 +15,9 @@
 		92FE2985299BBB6C003BC929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FE2983299BBB6C003BC929 /* LaunchScreen.storyboard */; };
 		92FE298D299BD3DE003BC929 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FE298C299BD3DE003BC929 /* Source.swift */; };
 		92FE298F299BDEA4003BC929 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FE298E299BDEA4003BC929 /* PhotoCell.swift */; };
+		92FE29B9299D27CD003BC929 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FE29B8299D27CD003BC929 /* TestTableViewController.swift */; };
+		92FE2A2D29A20F81003BC929 /* localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FE2A2C29A20F81003BC929 /* localization.swift */; };
+		92FE2A3029A21122003BC929 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92FE2A3229A21123003BC929 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,13 @@
 		92FE2986299BBB6C003BC929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92FE298C299BD3DE003BC929 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		92FE298E299BDEA4003BC929 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		92FE29B8299D27CD003BC929 /* TestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
+		92FE2A2C29A20F81003BC929 /* localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localization.swift; sourceTree = "<group>"; };
+		92FE2A3129A21123003BC929 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		92FE2A3429A2130A003BC929 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		92FE2A3529A2130A003BC929 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		92FE2A3629A2135A003BC929 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		92FE2A3829A21437003BC929 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +71,12 @@
 			isa = PBXGroup;
 			children = (
 				92FE2978299BBB6A003BC929 /* AppDelegate.swift */,
+				92FE29B8299D27CD003BC929 /* TestTableViewController.swift */,
 				92FE297A299BBB6A003BC929 /* SceneDelegate.swift */,
 				92FE297C299BBB6A003BC929 /* ViewController.swift */,
 				92FE298E299BDEA4003BC929 /* PhotoCell.swift */,
+				92FE2A2C29A20F81003BC929 /* localization.swift */,
+				92FE2A3229A21123003BC929 /* Localizable.strings */,
 				92FE298C299BD3DE003BC929 /* Source.swift */,
 				92FE297E299BBB6A003BC929 /* Main.storyboard */,
 				92FE2981299BBB6C003BC929 /* Assets.xcassets */,
@@ -115,6 +128,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 92FE296C299BBB69003BC929;
 			productRefGroup = 92FE2976299BBB6A003BC929 /* Products */;
@@ -132,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92FE2985299BBB6C003BC929 /* LaunchScreen.storyboard in Resources */,
+				92FE2A3029A21122003BC929 /* Localizable.strings in Resources */,
 				92FE2982299BBB6C003BC929 /* Assets.xcassets in Resources */,
 				92FE2980299BBB6A003BC929 /* Main.storyboard in Resources */,
 			);
@@ -148,7 +163,9 @@
 				92FE298F299BDEA4003BC929 /* PhotoCell.swift in Sources */,
 				92FE297D299BBB6A003BC929 /* ViewController.swift in Sources */,
 				92FE2979299BBB6A003BC929 /* AppDelegate.swift in Sources */,
+				92FE2A2D29A20F81003BC929 /* localization.swift in Sources */,
 				92FE297B299BBB6A003BC929 /* SceneDelegate.swift in Sources */,
+				92FE29B9299D27CD003BC929 /* TestTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +176,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				92FE297F299BBB6A003BC929 /* Base */,
+				92FE2A3429A2130A003BC929 /* ru */,
+				92FE2A3829A21437003BC929 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -167,8 +186,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				92FE2984299BBB6C003BC929 /* Base */,
+				92FE2A3529A2130A003BC929 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		92FE2A3229A21123003BC929 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92FE2A3129A21123003BC929 /* en */,
+				92FE2A3629A2135A003BC929 /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -178,6 +207,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -224,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -238,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -278,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

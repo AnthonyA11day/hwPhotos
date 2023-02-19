@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     func setupSubview() {
         view.backgroundColor = .systemGray4
-        title = "Photos"
+        title = "Photos".localized()
         setupCollectionView()
     }
     
@@ -45,7 +45,10 @@ class ViewController: UIViewController {
         let layout = UICollectionViewFlowLayout()
         
 //        layout.estimatedItemSize = .init(width: 120, height: 120)
-        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        layout.itemSize = CGSize(width: view.frame.size.width/3,
+                                 height: view.frame.size.width/3)
+        
+//        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         layout.minimumInteritemSpacing = .zero
         layout.minimumLineSpacing = .zero
         
@@ -81,7 +84,7 @@ extension ViewController: UICollectionViewDataSource {
 extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Select image - \(sourse[indexPath.item])")
+        print("Selected - \(sourse[indexPath.item])")
     }
     
 }

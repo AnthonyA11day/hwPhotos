@@ -27,8 +27,8 @@ class PhotoCell: UICollectionViewCell {
         contentView.addSubview(imageView)
         
         NSLayoutConstraint.activate([
-            imageView.widthAnchor.constraint(equalToConstant: 130),
-            imageView.heightAnchor.constraint(equalToConstant: 130),
+//            imageView.widthAnchor.constraint(equalToConstant: 130),
+//            imageView.heightAnchor.constraint(equalToConstant: 130),
             
             imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
             imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
